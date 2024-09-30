@@ -275,6 +275,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    height:20vh
    }
 
    header nav ul {
