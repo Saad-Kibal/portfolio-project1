@@ -1,4 +1,4 @@
-*, *::after , *::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +23,6 @@ header {
     position: fixed;
     border-bottom: 1px solid orangered;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter:blur(10px) ;
     top: 1;
     z-index: 1000;
 }
@@ -45,7 +44,7 @@ ul li a:hover {
 }
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fill , 100%);
+    grid-template-columns: repeat(1fr);
     grid-template-rows: 100vh;
     min-width: 100%;
     
