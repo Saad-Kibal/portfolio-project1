@@ -20,9 +20,7 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(80, 80, 80);
-    position: fixed;
     border-bottom: 1px solid orangered;
-    top: 1;
     z-index: 1000;
 }
 
