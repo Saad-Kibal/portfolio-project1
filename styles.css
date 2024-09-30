@@ -279,6 +279,7 @@ footer {
    header nav ul {
     justify-content: center;
     gap: 70px;
+    transform: translateY(15px);
    }
 
    #welcome-section {
