@@ -35,25 +35,27 @@ header nav ul {
 }
 ul li {
     transition: transform 0.1s linear;
+    font-size: 0.8em;
 }
-ul li:hover {
+ul li a:hover {
     color: orangered;
     transform: translateY(-5px);
 }
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fill , 1fr);
+    grid-template-columns: repeat(auto-fill , 100%);
     grid-template-rows: 100vh;
+    
 }
 
-.about {
+#welcome-section {
     justify-self: center;
     align-self: center;
 }
 
 
 
-.about img {
+#welcome-section img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,7 +69,7 @@ main {
 
 
 .hello {
-    font-size: 15vw;
+    font-size: 10em;
     background: linear-gradient(49deg,pink,white,orangered);
     background-clip: text;
     color: transparent;
@@ -76,7 +78,7 @@ main {
 }
 
 
-.about p {
+#welcome-section p {
     font-size: 2rem;
 }
 
@@ -86,14 +88,14 @@ main {
     font-style: italic;
 }
 
-.work a img {
+#projects a img {
     width: 250px;
     height: 100%;
     vertical-align: bottom;
     border-radius: 10px;
 }
 
-.work {
+#projects {
     background-color: rgba(48, 48, 48 ,50%);
     padding: 50px;
     display: flex;
@@ -102,7 +104,7 @@ main {
 }
 
 
-.work h2 {
+#projects h2 {
     font-size: 2em;
     text-align: center;
 
@@ -207,7 +209,7 @@ button:hover {
     }
 }
 
-.contact {
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -250,4 +252,76 @@ a {
 
 .socials a:hover {
     transform: translateY(-10px);
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   }
+
+   header nav ul {
+    justify-content: center;
+    gap: 70px;
+   }
+
+   #welcome-section {
+    padding: 0 15px;
+   }
+
+    
+    #welcome-section .hello {
+        font-size: 5em;
+    }
+
+    #welcome-section p {
+        font-size: 1.4em;
+        transform: translateY(10px);
+    }
+
+    #welcome-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .work-items {
+        flex-direction: column;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+    .contact-text p {
+        font-size: 0.8em;
+    }
+    .socials a {
+        font-size: 0.6em;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    footer p {
+        font-size: 0.7em;
+        flex-wrap: wrap;
+        gap: 15px;
+        text-align: center;
+    }
 }
