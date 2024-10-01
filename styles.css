@@ -338,10 +338,13 @@ footer {
         gap:18px;
     }
     .socials a {
-        font-size: 0.6em;
+        font-size: 1.2em;
         flex-direction: column;
         flex-wrap: wrap;
         flex: 1;
+    }
+    .socials a span {
+        display: none;
     }
     footer p {
         font-size: 0.7em;
