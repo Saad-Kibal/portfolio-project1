@@ -338,7 +338,7 @@ footer {
         gap:18px;
     }
     .socials a {
-        font-size: 1.2em;
+        font-size: 0.9em;
         flex-direction: column;
         flex-wrap: wrap;
         flex: 1;
